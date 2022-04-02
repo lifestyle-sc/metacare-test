@@ -265,6 +265,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 8px;
 }
 
 .main--section--menu--h1 {
@@ -331,7 +332,115 @@ body {
   left: -16px;
   width: 1px;
   height: 30px;
+  background: var(--border-color);
+}
+
+/* chart styles */
+.chart{
+  display: flex;
+  align-items: center;
+  margin: 24px 0;
+}
+
+.chart--main{
+  flex-grow: 1;
+}
+
+.chart--main--header{
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.chart--main--header--left{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.chart--main--header--title{
+  font-size: 17px;
+}
+
+.chart--main--header--profit{
+  font-size: 12px;
+  padding: 4px 12px;
+  background: #E9FAF2;
+  color: var(--secondary-color);
+  border-radius: 4px;
+}
+
+.chart--main--header--right{
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.chart--main--header--sub--title{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.chart--main--header--sub--title--left{
+  padding: 5px;
+  background: var(--orange-color);
+  border-radius: 2px;
+}
+
+.chart--main--header--sub--title--left{
+  font-size: 13px;
+}
+
+.chart--main--calender{
+  position: relative;
+  background: transparent;
+  color: var(--dark-color);
+  border: 1px solid var(--form-border-color);
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  border-radius: 8px;
+}
+
+.chart--main--calender:before{
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -16px;
+  width: 1px;
+  height: 24px;
   background: var(--form-border-color);
+}
+
+.chart--main--chart{
+  position: relative;
+  padding-top: 20px;
+  max-height: 268px;
+}
+
+.chart--aside{
+  padding: 23px 24px;
+}
+
+.chart--aside--item{
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 24px 16px;
+  background: #fafafa;
+  margin: 10px 0;
+}
+
+.chart--aside--item--title{
+  font-size: 12px;
+  color: var(--text-muted);
+  padding-bottom: 8px;
+}
+
+.chart--aside--item--body{
+  font-size: 18px;
+  font-weight: 600;
 }
 
 /* media query for tablet */

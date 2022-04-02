@@ -1,5 +1,6 @@
 import { ExpandMore, NotificationsNone, Search } from '@mui/icons-material';
 import React from 'react';
+import Chart from './charts/Chart';
 
 const Main = () => {
   return (
@@ -53,12 +54,19 @@ const Main = () => {
             <h2 className="main--section--menu--h1">Efficiency Analytics</h2>
             <div className="main--section--menu--form">
               <div className="main--section--menu--input--container">
-                <Search fontSize="small" className='icon-small light-text-muted'/>
-                <input type="text" placeholder='Search' className="main--section--menu--input" />
+                <Search
+                  fontSize="small"
+                  className="icon-small light-text-muted"
+                />
+                <input
+                  type="text"
+                  placeholder="Search"
+                  className="main--section--menu--input"
+                />
               </div>
               <button type="button" className="main--section--menu--filter">
                 Filter Options
-                <ExpandMore fontSize="small" className='icon-small'/>
+                <ExpandMore fontSize="small" className="icon-small" />
               </button>
 
               <button type="button" className="main--section--menu--exportBtn">
@@ -66,8 +74,7 @@ const Main = () => {
               </button>
             </div>
           </div>
-
-
+          <Chart />
         </div>
       </main>
     </div>
