@@ -339,7 +339,11 @@ body {
 .chart{
   display: flex;
   align-items: center;
+  gap: 24px;
   margin: 24px 0;
+  padding: 13px 24px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
 }
 
 .chart--main{
@@ -421,7 +425,17 @@ body {
 }
 
 .chart--aside{
-  padding: 23px 24px;
+  position: relative;
+}
+
+.chart--aside:before{
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -12px;
+  width: 1px;
+  height: 245px;
+  background: var(--border-color);
 }
 
 .chart--aside--item{
