@@ -1,11 +1,25 @@
-import { ExpandMore, Menu, NotificationsNone, Search } from '@mui/icons-material';
+import {
+  ExpandMore,
+  Menu,
+  NotificationsNone,
+  Search,
+} from '@mui/icons-material';
+import { useContext } from 'react';
+import StocksContext from '../context/StocksContext';
 import Chart from './charts/Chart';
 
 const Main = () => {
+  const stocksContext = useContext(StocksContext);
+
+  const { dispatch } = stocksContext;
+
+  const openNavbar = () => {
+    dispatch({ type: 'OPEN_NAVBAR' });
+  };
   return (
     <div>
       <header className="main--header">
-        <Menu className='main--header--menu--icon'/>
+        <Menu className="main--header--menu--icon button" onClick={openNavbar} />
         <div className="main--header--input--container">
           <input
             type="text"
@@ -74,10 +88,26 @@ const Main = () => {
               </button>
             </div>
           </div>
-          <Chart title={'Average response time'} color={'#f05d23'} keyword={'Response'}/>
-          <Chart title={'Replies per resolution'} color={'#3e68ff'} keyword={'Replies'}/>
-          <Chart title={'Average resolution time'} color={'#fb6491'} keyword={'Resolution'}/>
-          <Chart title={'First contact resolution rate'} color={'#07c9e2'} keyword={'Contact'}/>
+          <Chart
+            title={'Average response time'}
+            color={'#f05d23'}
+            keyword={'Response'}
+          />
+          <Chart
+            title={'Replies per resolution'}
+            color={'#3e68ff'}
+            keyword={'Replies'}
+          />
+          <Chart
+            title={'Average resolution time'}
+            color={'#fb6491'}
+            keyword={'Resolution'}
+          />
+          <Chart
+            title={'First contact resolution rate'}
+            color={'#07c9e2'}
+            keyword={'Contact'}
+          />
         </div>
       </main>
     </div>

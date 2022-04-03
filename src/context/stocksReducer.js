@@ -7,6 +7,18 @@ const StocksReducer = (state, action) => {
         dataSet: action.payload.dataSet,
       }
 
+    case "CLOSE_NAVBAR":
+      return{
+        ...state,
+        checked: false,
+      }
+
+      case "OPEN_NAVBAR":
+      return{
+        ...state,
+        checked: true,
+      }
+
     default:
       return state
   }
