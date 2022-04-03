@@ -1,13 +1,16 @@
-import Main from "./components/Main";
-import Navbar from "./components/Navbar";
+import Main from './components/Main';
+import Navbar from './components/Navbar';
+import { StocksProvider } from './context/StocksContext';
 
 function App() {
   return (
-    <div className='app'>
-    <Navbar />
+    <StocksProvider>
+      <div className="app">
+        <Navbar />
 
-    <Main />
-    </div>
+        <Main />
+      </div>
+    </StocksProvider>
   );
 }
 

@@ -90,6 +90,16 @@ body {
   padding: 20px;
 }
 
+.navbar--header--container{
+  display: flex;
+  gap: 10px;
+}
+
+.navbar--close{
+  display: none !important;
+}
+
+
 .navbar--header {
   border: 1px solid var(--border-color);
   border-radius: 8px;
@@ -161,6 +171,11 @@ body {
   align-items: center;
   padding: 12px 40px;
   border-bottom: 1px solid var(--border-color);
+}
+
+.main--header--menu--icon {
+  display: none !important;
+  color: var(--text-muted);
 }
 
 .main--header--input--container {
@@ -315,7 +330,7 @@ body {
   border-radius: 8px;
 }
 
-.main--section--menu--exportBtn{
+.main--section--menu--exportBtn {
   position: relative;
   background-color: var(--secondary-color);
   color: var(--light-color);
@@ -325,7 +340,7 @@ body {
   border: none;
 }
 
-.main--section--menu--exportBtn:before{
+.main--section--menu--exportBtn:before {
   content: '';
   position: absolute;
   top: 7px;
@@ -336,7 +351,7 @@ body {
 }
 
 /* chart styles */
-.chart{
+.chart {
   display: flex;
   align-items: center;
   gap: 24px;
@@ -346,57 +361,56 @@ body {
   border-radius: 10px;
 }
 
-.chart--main{
+.chart--main {
   flex-grow: 1;
 }
 
-.chart--main--header{
+.chart--main--header {
   display: flex;
   /* align-items: center; */
   justify-content: space-between;
 }
 
-.chart--main--header--left{
+.chart--main--header--left {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.chart--main--header--title{
+.chart--main--header--title {
   font-size: 17px;
 }
 
-.chart--main--header--profit{
+.chart--main--header--profit {
   font-size: 12px;
   padding: 4px 12px;
-  background: #E9FAF2;
+  background: #e9faf2;
   color: var(--secondary-color);
   border-radius: 4px;
 }
 
-.chart--main--header--right{
+.chart--main--header--right {
   display: flex;
   gap: 32px;
   align-items: center;
 }
 
-.chart--main--header--sub--title{
+.chart--main--header--sub--title {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.chart--main--header--sub--title--left{
+.chart--main--header--sub--title--left {
   padding: 5px;
-  background: var(--orange-color);
   border-radius: 2px;
 }
 
-.chart--main--header--sub--title--left{
+.chart--main--header--sub--title--left {
   font-size: 13px;
 }
 
-.chart--main--calender{
+.chart--main--calender {
   position: relative;
   background: transparent;
   color: var(--dark-color);
@@ -408,7 +422,7 @@ body {
   border-radius: 8px;
 }
 
-.chart--main--calender:before{
+.chart--main--calender:before {
   content: '';
   position: absolute;
   top: 6px;
@@ -418,17 +432,17 @@ body {
   background: var(--form-border-color);
 }
 
-.chart--main--chart{
+.chart--main--chart {
   position: relative;
   padding-top: 20px;
   max-height: 268px;
 }
 
-.chart--aside{
+.chart--aside {
   position: relative;
 }
 
-.chart--aside:before{
+.chart--aside:before {
   content: '';
   position: absolute;
   top: -15px;
@@ -438,7 +452,7 @@ body {
   background: var(--border-color);
 }
 
-.chart--aside--item{
+.chart--aside--item {
   border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 24px 16px;
@@ -446,13 +460,13 @@ body {
   margin: 10px 0;
 }
 
-.chart--aside--item--title{
+.chart--aside--item--title {
   font-size: 12px;
   color: var(--text-muted);
   padding-bottom: 8px;
 }
 
-.chart--aside--item--body{
+.chart--aside--item--body {
   font-size: 18px;
   font-weight: 600;
 }

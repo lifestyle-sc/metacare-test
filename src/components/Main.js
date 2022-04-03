@@ -1,11 +1,11 @@
-import { ExpandMore, NotificationsNone, Search } from '@mui/icons-material';
-import React from 'react';
+import { ExpandMore, Menu, NotificationsNone, Search } from '@mui/icons-material';
 import Chart from './charts/Chart';
 
 const Main = () => {
   return (
     <div>
       <header className="main--header">
+        <Menu className='main--header--menu--icon'/>
         <div className="main--header--input--container">
           <input
             type="text"
@@ -74,7 +74,10 @@ const Main = () => {
               </button>
             </div>
           </div>
-          <Chart />
+          <Chart title={'Average response time'} color={'#f05d23'} keyword={'Response'}/>
+          <Chart title={'Replies per resolution'} color={'#3e68ff'} keyword={'Replies'}/>
+          <Chart title={'Average resolution time'} color={'#fb6491'} keyword={'Resolution'}/>
+          <Chart title={'First contact resolution rate'} color={'#07c9e2'} keyword={'Contact'}/>
         </div>
       </main>
     </div>

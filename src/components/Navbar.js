@@ -5,6 +5,7 @@ import {
   CalendarTodayOutlined,
   CheckBoxOutlined,
   ChevronRight,
+  Close,
   ExpandMore,
   PeopleOutline,
 } from '@mui/icons-material';
@@ -62,9 +63,12 @@ const Navbar = () => {
   };
   return (
     <div className="navbar">
-      <header className="navbar--header">
+      <header className="navbar--header--container">
+      <div className="navbar--header">
         <h2 className="navbar--header--title">Meta Care</h2>
         <p className="navbar--header--desc">adeyinka@metacare.app</p>
+      </div>
+      <Close className='navbar--close' />
       </header>
 
       <main className="navbar--body">
